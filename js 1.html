@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<style>
+			#btn
+			{
+				background-color: greenyellow;
+				color:deepskyblue;
+			}
+		
+		</style>
+		<script>
+			function getapp()
+			{
+				var txt=Number(document.getElementById("txt1").value);//10
+				switch(txt)
+					{
+						case 1:
+							document.getElementById("sp").innerText="App IAS  2025 Bnege";
+							break;
+							case 2:
+							document.getElementById("sp").innerText="Aap Bhut Romantic hai";
+							break;
+							case 3:
+							document.getElementById("sp").innerText="Bpp kl Shaadi hai ";
+							break;
+							case 4:
+							document.getElementById("sp").innerText="App bhut sidhe hai";
+							break;
+							case 5:
+							document.getElementById("sp").innerText="App bhut Smart hai";
+							break;
+							case 6:
+							document.getElementById("sp").innerText="App ki love Marriage Hogi";
+							break;
+							case 7:
+							document.getElementById("sp").innerText="App ki Arranged Marriage hogi ";
+							break;
+						default:
+							
+							document.getElementById("sp").innerText="please enter vaild number";
+							break;
+					}
+			}
+		
+		
+		
+		</script>
+	</head>
+	<body>
+	Enter your Lucky Number:
+		<br>
+		<input type="text" id="txt1">
+		<input type="button" value="Get Message"id="btn" onclick="getapp()"><br>
+		<span id="sp"></span>
+	
+	
+	</body>
+</html>
